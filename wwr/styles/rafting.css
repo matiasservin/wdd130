@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap');
-
+@import url('https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55');
 
 * {
     margin: 0;
@@ -11,28 +10,28 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f1f1f1;
-    color: #333;
+    background-color: #CFCFB4;
+    color: #264969;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #118ab2;
+    background-color: #264969;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    color: white;
+    color: #CFCFB4;
     font-family: 'Merriweather', serif;
     font-size: 2rem;
     letter-spacing: 1px;
 }
 
 header p {
-    color: white;
+    color: #CFCFB4;
     font-size: 1rem;
 }
 
@@ -40,17 +39,8 @@ header img {
     height: 60px;
 }
 
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
 nav a:hover {
-    color: #ffd166;
+    color: #505033;
     text-decoration: underline;
 }
 
@@ -58,20 +48,9 @@ nav a:hover {
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: #073b4c;
+    background-color: #264969;
     background: url('images/hero_image.png') no-repeat center center;
     background-size: cover;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    font-family: 'Merriweather', serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero::after {
@@ -84,14 +63,13 @@ nav a:hover {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 
-
 .hero article {
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #CFCFB4;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -104,32 +82,16 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-
-section h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 2rem;
-    color: #073b4c;
-    margin: 20px 0;
-}
-
-section p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-
 section.history {
     padding: 20px;
-    background-color: #e9f1f5;
+    background-color: #B4CDE4;
 }
-
 
 section.adventure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #ffd166; 
+    background-color: #CFCFB4;
     padding: 20px;
 }
 
@@ -141,10 +103,9 @@ section.adventure img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 footer {
-    background-color: #073b4c;
-    color: white;
+    background-color: #264969;
+    color: #CFCFB4;
     text-align: center;
     padding: 20px;
 }
@@ -159,24 +120,4 @@ footer nav a {
 
 footer nav img {
     width: 30px;
-}
-
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    section.adventure img {
-        max-width: 100%;
-    }
 }
