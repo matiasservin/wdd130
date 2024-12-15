@@ -1,5 +1,10 @@
-
-@import url('https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55');
+:root {
+    --dark-blue: #495867;
+    --medium-blue: #577399;
+    --light-blue: #BDD5EA;
+    --lightest-blue: #F7F7FF;
+    --coral: #FE5F55;
+}
 
 * {
     margin: 0;
@@ -10,112 +15,146 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #CFCFB4;
-    color: #264969;
+    background-color: var(--lightest-blue);
+    color: var(--dark-blue);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #264969;
+    background-color: var(--dark-blue);
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 header h1 {
-    color: #CFCFB4;
+    color: var(--lightest-blue);
     font-family: 'Merriweather', serif;
     font-size: 2rem;
     letter-spacing: 1px;
 }
 
-header p {
-    color: #CFCFB4;
-    font-size: 1rem;
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-header img {
-    height: 60px;
+nav a {
+    color: var(--lightest-blue);
+    text-decoration: none;
+    margin-left: 20px;
 }
 
 nav a:hover {
-    color: #505033;
+    color: var(--coral);
     text-decoration: underline;
 }
 
 .hero {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-color: #264969;
-    background: url('images/hero_image.png') no-repeat center center;
-    background-size: cover;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-}
-
-.hero article {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #CFCFB4;
-    padding: 15px;
-    border-radius: 8px;
     text-align: center;
-    width: 80%;
+    padding: 50px 20px;
+    background-color: var(--medium-blue);
+    color: var(--lightest-blue);
 }
 
-.hero article img {
-    width: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-section.history {
-    padding: 20px;
-    background-color: #B4CDE4;
-}
-
-section.adventure {
+.description-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    background-color: #CFCFB4;
-    padding: 20px;
+    align-items: center;
+    gap: 20px;
 }
 
-section.adventure img {
-    width: 100%;
-    max-width: 200px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.description-container p {
+    max-width: 500px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.description-container img {
+    max-width: 400px;
+    height: auto;
+}
+
+.history {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.history h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.history-content img {
+    max-width: 500px;
+    height: auto;
+}
+
+.adventure {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.adventure h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.adventure-images figure {
+    text-align: center;
+}
+
+.adventure-images img {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-images figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--dark-blue);
 }
 
 footer {
-    background-color: #264969;
-    color: #CFCFB4;
+    background-color: var(--dark-blue);
+    color: var(--lightest-blue);
     text-align: center;
     padding: 20px;
 }
 
-footer p {
-    font-size: 1rem;
-}
-
-footer nav a {
-    margin: 0 15px;
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 footer nav img {
